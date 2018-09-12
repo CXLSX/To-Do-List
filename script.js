@@ -1,7 +1,5 @@
 var ulEntry = document.getElementById("ulEntry");
 var addEntry = document.getElementById("addEntry");
-
-addEntry.addEventListener('submit', todoList);
 	
 function todoList(){
 	var entryInput = document.getElementById("entryInput").value;
@@ -10,7 +8,6 @@ function todoList(){
 	newLi.appendChild(document.createTextNode(entryInput));
   	var deleteBtn = document.createElement('button');
   	deleteBtn.className = 'btn btn-danger btn-sm float-right delete fas fa-trash-alt';
-  	//deleteBtn.appendChild(document.createTextNode(''));
   	newLi.appendChild(deleteBtn);
   	ulEntry.appendChild(newLi);
 	document.getElementById("entryInput").value = "";
