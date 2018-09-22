@@ -4,24 +4,28 @@
 <meta charset="UTF-8">
 <title>To Do List</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 </head>
 <body>
-<div class="well bg-success">
-  <div class="container">
-    <h1 class="display-4" style="color">To Do List</h1>
-    <p class="lead">Vanilla JavaScript To Do List app.</p>
+<div class="container-fluid col col-sm-12">
+  <div class="well bg-success">
+    <h1 class="display-4 text-center" style="color:#fff;">To Do List</h1>
+    <p class="lead text-center" style="color:#fff;">Vanilla JavaScript To Do List app.</p>
   </div>
 </div>
-<div class="container">
-	<div class="card" style="width: 18rem;">
+<div class="container col" id="alerts" style="width: 28rem;">
+	<div class="text-center col" id="setAlert" role="alert">
+  	
+	</div>
+</div>
+<div class="container col col-sm-12" style="width: 28rem;">
+	<div class="card" >
   <div class="card-body">
     <h3 class="card-title">Add Items</h3>
-    <input type="email" class="form-control" id="entryInput" placeholder="Add Entry...">
+    <input type="email" class="form-control" id="entryInput" placeholder="New Entry...">
     <input type="submit" class="btn btn-success" id="addEntry" onclick="todoList()" value="Submit" style="margin-top: 10px; width: 100%;">
   </div>
   <ul class="list-group list-group-flush" id="ulEntry">
-   <!--<li class="list-group-item" id="liItems"><button class="btn btn-danger btn-sm float-right delete fas fa-trash-alt"></button>Cras justo odio</li>-->
   </ul>
 </div>
 </div>
