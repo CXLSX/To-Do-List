@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 var ulEntry = document.getElementById("ulEntry");
 var addEntry = document.getElementById("addEntry");
 
@@ -35,5 +36,7 @@ addEntry.addEventListener("click", function(){
 	setTimeout(function(){demo.style.visibility= "visible";}, 1000);		
 });
 =======
+=======
+>>>>>>> 45cd7db800f7dd5d1f2a261d44f9e345850a18d6
 
 >>>>>>> 45cd7db800f7dd5d1f2a261d44f9e345850a18d6
