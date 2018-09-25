@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 var ulEntry = document.getElementById("ulEntry");
 var addEntry = document.getElementById("addEntry");
-
-
 
 function todoList(e){
 	var entryInput = document.getElementById("entryInput").value;
@@ -12,7 +8,6 @@ function todoList(e){
 	newLi.appendChild(document.createTextNode(entryInput));
   	var deleteBtn = document.createElement('button');
   	deleteBtn.className = 'btn btn-danger btn-sm float-right delete fas fa-trash-alt';
-  	//deleteBtn.appendChild(document.createTextNode(''));
   	newLi.appendChild(deleteBtn);
   	ulEntry.appendChild(newLi);
 	document.getElementById("entryInput").value = "";
@@ -35,8 +30,3 @@ addEntry.addEventListener("click", function(){
 	demo.textContent = "A New Item has been added Successfully!!";
 	setTimeout(function(){demo.style.visibility= "visible";}, 1000);		
 });
-=======
-=======
->>>>>>> 45cd7db800f7dd5d1f2a261d44f9e345850a18d6
-
->>>>>>> 45cd7db800f7dd5d1f2a261d44f9e345850a18d6
